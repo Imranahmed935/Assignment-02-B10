@@ -4,3 +4,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+#menu-icon {
+  display: none;
+}
+nav {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.brand-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+span {
+  color: #e6533c;
+  font-size: 3rem;
+}
+#menu-section {
+  display: flex;
+}
+#menu-section li {
+  list-style: none;
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding: 10px 18px;
+}
+#home {
+  padding: 8px 18px;
+  background-color: #e6533c;
+  border-radius: 30px;
+  color: #ffff;
+}
+
+@media screen and (max-width: 576px) {
+  #menu-section {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 30px;
+  }
+  nav {
+    width: 100%;
+    padding: 15px;
+  }
+  .brand-logo {
+    font-size: 2rem;
+  }
+  span{
+    font-size: 2rem;
+  }
+}
