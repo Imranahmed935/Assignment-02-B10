@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@font-face {
+  font-family: myFont;
+  src: url("../Miama.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.header-section {
+  background: linear-gradient(50deg, #1d1d1d, #2c2a2a);
 }
 #menu-icon {
   display: none;
@@ -16,6 +24,7 @@ nav {
   padding: 20px 0px;
 }
 .brand-logo {
+  color: #ffff;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -28,16 +37,112 @@ span {
 }
 #menu-section li {
   list-style: none;
-  margin: 20px;
+  margin: 10px;
+  color: #ffff;
   font-size: 1.5rem;
   font-weight: 200;
-  padding: 10px 18px;
+  padding: 10px 15px;
 }
 #home {
-  padding: 8px 18px;
   background-color: #e6533c;
   border-radius: 30px;
   color: #ffff;
+}
+.banner-section {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.banner-details {
+  width: 50%;
+}
+.banner-details h1 {
+  font-size: 6rem;
+  color: #ffff;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+.banner-details p {
+  font-size: 1.2rem;
+  color: #dddddd;
+  margin-bottom: 20px;
+}
+.banner-image {
+  width: 50%;
+}
+.sticker {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  background: rgba(228, 226, 226, 0.186);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  position: absolute;
+  top: 600px;
+}
+.video-tutorial h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.video-tutorial p {
+  font-size: 1rem;
+  color: #adabab;
+}
+.circle {
+  background-color: #e6533c;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.sticker-two {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  background: rgba(228, 226, 226, 0.186);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  position: absolute;
+  top: 300px;
+  left: 1280px;
+}
+.sticker-two h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.banner-image img {
+  width: 80%;
+  margin-bottom: -15px;
+  margin-left: 40px;
+}
+.Miama-font {
+  font-family: myFont;
+  font-size: 5rem;
+  color: #ffff;
+}
+button {
+  background-color: #e6533c;
+  padding: 15px 50px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 10px;
+  border: none;
+  outline: none;
+}
+.btn-download {
+  background: transparent;
+  border: 1px solid #ffffff;
 }
 
 @media screen and (max-width: 576px) {
@@ -47,6 +152,7 @@ span {
   #menu-icon {
     display: block;
     font-size: 30px;
+    color: #ffffff;
   }
   nav {
     width: 100%;
@@ -55,7 +161,67 @@ span {
   .brand-logo {
     font-size: 2rem;
   }
-  span{
+  span {
     font-size: 2rem;
+  }
+  .banner-section {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .banner-details {
+    width: 100%;
+  }
+  .banner-details h1 {
+    font-size: 3.5rem;
+  }
+  .banner-image {
+    width: 100%;
+  }
+  .banner-image img {
+    width: 90%;
+    margin-bottom: 1px;
+    margin-left: 5px;
+  }
+
+  button {
+    padding: 15px 36px;
+    margin: 3px;
+  }
+  .sticker-two {
+    left: 250px;
+    top: 550px;
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+  }
+  .sticker-two h1 {
+    font-size: 1.5rem;
+  }
+  .sticker-two p {
+    font-size: 1rem;
+  }
+  .sticker {
+    left: 70px;
+    top: 800px;
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+  }
+  .sticker h1 {
+    font-size: 1.5rem;
+  }
+  .sticker p {
+    font-size: 1rem;
+  }
+  /* .header-section{
+    width: 100%;
+    padding: 0px 10px;
+  } */
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  #menu-section li {
+    margin: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
   }
 }
