@@ -150,11 +150,10 @@ button {
 main {
   max-width: 1060px;
   margin: 0 auto;
-  height: 452px;
 }
 .habit-title {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .habit-title h1 {
   margin-bottom: 10px;
@@ -185,6 +184,36 @@ main {
 .image p {
   color: #c6c4c4;
   font-size: 1rem;
+}
+.extra-run {
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  background: #222222;
+  border-radius: 20px;
+}
+.extra-detail {
+  width: 50%;
+}
+.extra-detail h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.extra-detail p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #a9a7a7;
+}
+.extra-img {
+  width: 50%;
+}
+.extra-img img {
+  width: 100%;
+  border-radius: 50px;
+}
+.join-btn {
+  padding: 15px 80px;
 }
 
 @media screen and (max-width: 576px) {
@@ -255,10 +284,29 @@ main {
   .sticker p {
     font-size: 1rem;
   }
-  /* .header-section{
+  .habit-title h1 {
+    font-size: 2rem;
+  }
+  .habit-images {
+    flex-direction: column;
+  }
+  .image {
+    margin-bottom: 30px;
+  }
+  .extra-run {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .extra-detail {
     width: 100%;
-    padding: 0px 10px;
-  } */
+  }
+  .extra-img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .join-btn{
+    width: 100%;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   #menu-section li {
