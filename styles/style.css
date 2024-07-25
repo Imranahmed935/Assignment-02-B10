@@ -216,6 +216,66 @@ main {
   padding: 15px 80px;
 }
 
+.bmi-title {
+  margin-left: 250px;
+  margin-top: 80px;
+}
+.bmi-title h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.bmi-title p {
+  font-size: 1.1rem;
+  color: #747474;
+}
+.calculator-bg {
+  background: #222222;
+  padding: 50px;
+  width: 100%;
+  margin-top: 100px;
+}
+.bmi-chart-section {
+  max-width: 1060px;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+  gap: 10px;
+}
+.bmi-chart {
+  width: 40%;
+  border: 2px solid green;
+  height: 100%;
+}
+.bmi-chart h1 {
+  font-size: 2.5rem;
+  color: #ffff;
+  margin-bottom: 50px;
+}
+.bmi-calculator {
+  width: 60%;
+  border: 2px solid green;
+  height: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid #747474;
+  border-collapse: collapse;
+  padding: 15px 20px;
+  margin-left: 20px;
+}
+table,
+th {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+table,
+td {
+  font-size: 1rem;
+  color: #868585;
+}
+
 @media screen and (max-width: 576px) {
   #menu-section {
     display: none;
@@ -304,7 +364,7 @@ main {
     width: 100%;
     margin-top: 50px;
   }
-  .join-btn{
+  .join-btn {
     width: 100%;
   }
 }
