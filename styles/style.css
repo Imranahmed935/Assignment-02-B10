@@ -304,7 +304,189 @@ select {
   margin-top: 40px;
   margin-left: -1px;
 }
-
+.team-section {
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.team-title {
+  text-align: center;
+}
+.team-title h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+.team-title p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #747474;
+}
+.team-gallery {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  background: #403f3f;
+  padding: 15px;
+  border-radius: 20px;
+}
+.img-file-1 {
+  background-image: url("../images/trainer1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 330px;
+  height: 300px;
+  opacity: 0.7;
+  position: relative;
+}
+.name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.name,
+h4 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.name,
+p {
+  font-size: 1.3rem;
+  color: #adabab;
+}
+.img-file-2 {
+  background-image: url("../images/trainer2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 330px;
+  height: 300px;
+  opacity: 0.7;
+  position: relative;
+}
+.name-2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.name-2,
+h4 {
+  font-size: 2rem;
+  color: white;
+}
+.name-2,
+p {
+  font-size: 1.3rem;
+  color: #adabab;
+}
+.img-file-3 {
+  background-image: url("../images/trainer3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 330px;
+  height: 300px;
+  opacity: 0.7;
+  position: relative;
+}
+.name-3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.name-3,
+h4 {
+  font-size: 2rem;
+  color: white;
+}
+.name-3,
+p {
+  font-size: 1.3rem;
+  color: #adabab;
+}
+.img-file-4 {
+  background-image: url("../images/trainer4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 330px;
+  height: 300px;
+  opacity: 0.7;
+  position: relative;
+}
+.name-4 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.name-4,
+h4 {
+  font-size: 2rem;
+  color: white;
+}
+.name-4,
+p {
+  font-size: 1.3rem;
+  color: #adabab;
+}
+.img-file-5 {
+  background-image: url("../images/trainer5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 330px;
+  height: 300px;
+  opacity: 0.7;
+  position: relative;
+}
+.name-5 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.name-5,
+h4 {
+  font-size: 2rem;
+  color: white;
+}
+.name-4,
+p {
+  font-size: 1.3rem;
+  color: #adabab;
+}
+.img-file-6 {
+  background-image: url("../images/trainer6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 330px;
+  height: 300px;
+  opacity: 0.7;
+  position: relative;
+}
+.name-6 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.name-6,
+h4 {
+  font-size: 2rem;
+  color: white;
+}
+.name-6,
+p {
+  font-size: 1.3rem;
+  color: #adabab;
+}
 @media screen and (max-width: 576px) {
   #menu-section {
     display: none;
@@ -376,6 +558,9 @@ select {
   .habit-title h1 {
     font-size: 2rem;
   }
+  .habit-title p {
+    font-size: 1rem;
+  }
   .habit-images {
     flex-direction: column;
   }
@@ -418,6 +603,20 @@ select {
   }
   .bmi-form > input,
   select {
+    width: 100%;
+  }
+  .team-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-title p {
+    font-size: 1rem;
+  }
+  .img-file-1,
+  .img-file-2,
+  .img-file-3,
+  .img-file-4,
+  .img-file-5,
+  .img-file-6 {
     width: 100%;
   }
 }
