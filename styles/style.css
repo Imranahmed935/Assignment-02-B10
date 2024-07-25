@@ -152,6 +152,7 @@ main {
   margin: 0 auto;
 }
 .habit-title {
+  padding: 5px;
   text-align: center;
   margin-top: 50px;
 }
@@ -161,7 +162,7 @@ main {
   color: #ffffff;
 }
 .habit-title p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #c6c4c4;
 }
 .habit-images {
@@ -238,14 +239,11 @@ main {
 .bmi-chart-section {
   max-width: 1060px;
   margin: 0 auto;
-  height: 500px;
   display: flex;
   gap: 10px;
 }
 .bmi-chart {
-  width: 40%;
-  border: 2px solid green;
-  height: 100%;
+  width: 50%;
 }
 .bmi-chart h1 {
   font-size: 2.5rem;
@@ -253,9 +251,7 @@ main {
   margin-bottom: 50px;
 }
 .bmi-calculator {
-  width: 60%;
-  border: 2px solid green;
-  height: 100%;
+  width: 50%;
 }
 table,
 th,
@@ -274,6 +270,39 @@ table,
 td {
   font-size: 1rem;
   color: #868585;
+}
+.calculator-title h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.calculator-title p {
+  font-size: 1rem;
+  color: #8b8a8a;
+}
+.bmi-form {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.bmi-form > input,
+select {
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #747474;
+  background: #403f3f;
+}
+#input-factor {
+  grid-column: span 2;
+}
+.calculate-btn {
+  padding: 15px 60px;
+  margin-top: 40px;
+  margin-left: -1px;
 }
 
 @media screen and (max-width: 576px) {
@@ -315,7 +344,7 @@ td {
   }
 
   button {
-    padding: 15px 36px;
+    padding: 15px 32px;
     margin: 3px;
   }
   .sticker-two {
@@ -365,6 +394,30 @@ td {
     margin-top: 50px;
   }
   .join-btn {
+    width: 100%;
+  }
+  .bmi-chart-section {
+    flex-direction: column;
+  }
+  .calculator-bg {
+    padding: 10px;
+  }
+  .bmi-chart {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .bmi-counter {
+    width: 100%;
+  }
+  .bmi-title {
+    margin-left: 10px;
+  }
+  .bmi-calculator {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .bmi-form > input,
+  select {
     width: 100%;
   }
 }

@@ -146,7 +146,31 @@
             </tr>
           </table>
         </div>
-        <div class="bmi-calculator"></div>
+        <div class="bmi-calculator">
+          <div class="bmi-counter">
+            <div class="calculator-title">
+              <h1>Calculate your BMI</h1>
+              <p>
+                Body Mass Index is a simple calculation using a person's height
+                and weight.
+              </p>
+            </div>
+            <div class="bmi-form">
+              <input type="text" placeholder="Hight/cm" />
+              <input type="text" placeholder="  Weight/kg" />
+              <input type="text" placeholder="  Age" />
+              <select value="select-sex">
+                <option value="sex">sex</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+              </select>
+              <select value="select-sex" id="input-factor">
+                <option value="factor">select an activity factor</option>
+              </select>
+            </div>
+            <button class="calculate-btn">Calculate</button>
+          </div>
+        </div>
       </div>
     </section>
   </body>
