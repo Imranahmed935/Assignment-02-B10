@@ -511,9 +511,7 @@ footer {
   font-size: 1rem;
   color: #747474;
 }
-/* .get-started {
-  width: 2%;
-} */
+
 .get-started h1 {
   margin-bottom: 20px;
   font-size: 2rem;
@@ -525,9 +523,7 @@ footer {
   list-style: none;
   margin-bottom: 10px;
 }
-/* .social-media {
-  width: 30%;
-} */
+
 .social-media h1 {
   margin-bottom: 20px;
   font-size: 2rem;
@@ -549,6 +545,92 @@ hr {
   margin-top: 50px;
   text-align: center;
 }
+.workouts {
+  margin-top: 50px;
+}
+.workouts-title h1 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  background: #302f2f;
+  border-radius: 10px;
+  padding: 5px;
+}
+.card {
+  width: 340px;
+  height: 370px;
+  padding: 5px;
+  border: 1px solid #9f9f9f;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.name-section {
+  transition: 0.1s;
+}
+.card:hover .name-section {
+  display: none;
+}
+.card:hover .description {
+  display: block;
+  margin-top: 20px;
+}
+.step-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.name-section h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+.step {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #747474;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.step p {
+  position: relative;
+  top: -35px;
+  left: 15px;
+}
+.step h6 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: relative;
+  top: 10px;
+  left: 25px;
+}
+.line {
+  position: relative;
+  top: -35px;
+  color: red;
+  width: 100%;
+}
+.short-description h6 {
+  color: #adabab;
+  font-size: 1.2rem;
+}
+.description {
+  background: #fff;
+  display: none;
+  padding: 25px;
+}
+.workouts-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
 @media screen and (max-width: 576px) {
   #menu-section {
     display: none;
@@ -574,6 +656,7 @@ hr {
   }
   .banner-details {
     width: 100%;
+    margin-bottom: 50px;
   }
   .banner-details h1 {
     font-size: 3.5rem;
@@ -593,7 +676,7 @@ hr {
   }
   .sticker-two {
     left: 200px;
-    top: 550px;
+    top: 650px;
     width: 150px;
     height: 70px;
     padding: 10px;
@@ -663,9 +746,32 @@ hr {
     margin-top: 50px;
     width: 100%;
   }
+  .bmi-chart h1 {
+    font-size: 1.2rem;
+  }
+  .calculator-title h1 {
+    font-size: 1.2rem;
+  }
+  .bmi-title h1 {
+    font-size: 2rem;
+  }
   .bmi-form > input,
   select {
     width: 100%;
+  }
+  .workouts-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+  .workouts-title h1 {
+    font-size: 2rem;
+  }
+  .workouts-title {
+    padding: 10px;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
   }
   .team-gallery {
     grid-template-columns: repeat(1, 1fr);
@@ -681,22 +787,15 @@ hr {
   .img-file-6 {
     width: 100%;
   }
-  footer{
+  footer {
     padding: 10px;
   }
-  .fitness{
+  .fitness {
     width: 90%;
   }
   .footer-section {
     flex-direction: column;
     gap: 30px;
   }
- 
 }
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  #menu-section li {
-    margin: 5px;
-    font-size: 1.1rem;
-    padding: 10px;
-  }
-}
+/* @media screen and (min-width: 577px) and (max-width: 992px) { */
