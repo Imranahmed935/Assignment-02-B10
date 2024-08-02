@@ -37,6 +37,8 @@ span {
 }
 #menu-section {
   display: flex;
+  border: 1px solid #3a3939;
+  border-radius: 30px;
 }
 #menu-section li {
   list-style: none;
@@ -553,7 +555,7 @@ hr {
   font-size: 2.5rem;
   color: white;
   text-align: center;
-  background: #302f2f;
+  border: 1px solid #9f9f9f;
   border-radius: 10px;
   padding: 5px;
 }
@@ -569,9 +571,7 @@ hr {
   width: 100%;
   border-radius: 5px;
 }
-.name-section {
-  transition: 0.1s;
-}
+
 .card:hover .name-section {
   display: none;
 }
@@ -601,7 +601,7 @@ hr {
 .step p {
   position: relative;
   top: -35px;
-  left: 15px;
+  left: 10px;
 }
 .step h6 {
   color: #ffffff;
@@ -629,6 +629,129 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+}
+.training-title {
+  margin-top: 80px;
+}
+.training-title h1 {
+  font-size: 3rem;
+  color: #ffff;
+  margin-bottom: 10px;
+}
+.training-title h1 {
+  font-size: 2.7rem;
+}
+.image-container {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas:
+    "pic-1 pic-2 pic-2 pic-3"
+    "pic-4 pic-4 pic-5 pic-6";
+}
+
+.image-1 {
+  grid-area: pic-1;
+  height: 250px;
+  background: linear-gradient(#06ffd165, #06ffd179),
+    url("../images/exercise1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image-2 {
+  grid-area: pic-2;
+  height: 250px;
+  background: linear-gradient(
+      rgba(255, 71, 71, 0.589),
+      rgba(255, 71, 71, 0.533)
+    ),
+    url("../images/exercise2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image-3 {
+  grid-area: pic-3;
+  height: 250px;
+  background: linear-gradient(#00000076, #27262670),
+    url("../images/exercise3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image-4 {
+  grid-area: pic-4;
+  height: 250px;
+  background: linear-gradient(#00000084, #27262684),
+    url("../images/exercise4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image-5 {
+  grid-area: pic-5;
+  height: 250px;
+  background: linear-gradient(
+      rgba(76, 242, 76, 0.477),
+      rgba(87, 234, 87, 0.527)
+    ),
+    url("../images/exercise5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image-6 {
+  grid-area: pic-6;
+  height: 250px;
+  background: linear-gradient(rgba(0, 0, 255, 0.463), rgba(0, 0, 255, 0.489)),
+    url("../images/exercise6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-1 p {
+  position: relative;
+  top: 80%;
+  left: 10%;
+  color: black;
+  font-weight: bold;
+}
+.image-2 p {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+  font-weight: bold;
+}
+.image-3 p {
+  position: relative;
+  top: 80%;
+  left: 10%;
+  color: #fff;
+  font-weight: bold;
+}
+.image-4 p {
+  position: relative;
+  right: -70%;
+  top: 10%;
+  color: #fff;
+  font-weight: bold;
+}
+.image-5 p {
+  position: relative;
+  top: 80%;
+  left: 10%;
+  color: #fff;
+  font-weight: bold;
+}
+.image-6 p {
+  position: relative;
+  top: 80%;
+  left: 10%;
+  color: #fff;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 576px) {
@@ -797,5 +920,10 @@ hr {
     flex-direction: column;
     gap: 30px;
   }
+  .image-container {
+    display: none;
+  }
+  .training-title {
+    display: none;
+  }
 }
-/* @media screen and (min-width: 577px) and (max-width: 992px) { */
